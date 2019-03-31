@@ -9,7 +9,7 @@ metadata:
 spec:
   secretsName: my-cluster-secrets
   pxc:
-    size: 3
+    size: 2
     allowUnsafeConfigurations: false
     image: percona/percona-xtradb-cluster-operator:0.3.0-pxc
 #    configuration: |
@@ -26,8 +26,8 @@ spec:
 #      rack: rack-22
     resources:
       requests:
-        memory: 1G
-        cpu: 600m
+        memory: 500M
+        cpu: 100m
 #      limits:
 #        memory: 1G
 #        cpu: "1"
@@ -76,8 +76,8 @@ spec:
 #      rack: rack-22
     resources:
       requests:
-        memory: 1G
-        cpu: 600m
+        memory: 500M
+        cpu: 300m
 #      limits:
 #        memory: 1G
 #        cpu: 700m
